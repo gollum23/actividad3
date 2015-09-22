@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../css/normalize.css);
 @import url(../css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -8,7 +9,7 @@
 
 h1, h2, h3, h4 { font-family: "Alegreya", serif; }
 
-.Header { margin: 0 auto; width: 960px; }
+.Header { padding: 1px 0 0 0; margin: 0 auto; width: 960px; }
 
 .Title { text-align: center; }
 
@@ -24,19 +25,31 @@ h1, h2, h3, h4 { font-family: "Alegreya", serif; }
 
 .Content { width: 640px; margin: 10px 0; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-lines: multiple; -moz-box-lines: multiple; box-lines: multiple; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.Aside { width: 300px; margin: 10px; }
+.Aside { margin-top: 10px; width: 320px; background: rgba(65, 105, 225, 0.3); border-left: 1px solid rgba(65, 105, 225, 0.8); }
 
-.Article { margin: 10px; width: 300px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); padding: 0.5em; }
+.Article { margin: 10px; width: 300px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); padding: 0.5em; background: white; }
 .ArticleHeader-top { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -moz-box-pack: justify; box-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; -ms-flex-pack: justify; font-size: 0.75em; border-bottom: 1px solid #cccccc; }
 .ArticleHeader-top--category { color: #0b97c4; font-weight: bold; }
 .Article-title { margin: 0; }
 .ArticleContent-image { margin: 0; padding: 0; width: 100%; }
 .ArticleContent-image img { width: 100%; }
+.ArticleFooter-text { font-size: 10px; }
+.ArticleFooter-link { color: black; }
+
+.audiojs { background: #404040; height: 20px; width: 100%; }
+.audiojs .play-pause { height: 23px; padding: 0 8px 0 0; margin-top: -3px; width: 23px; }
+.audiojs .scrubber { background: #5a5a5a; height: 10px; width: 55%; margin: 5px; }
+.audiojs .time { height: 23px; line-height: 23px; }
+
+.VocesList { list-style: none; padding-left: 24px; }
+.VocesList-item { position: relative; }
+.VocesList-item a { color: black; display: block; font-weight: normal; text-decoration: none; padding: 0.25em 0; }
+.VocesList-item.playing::before { font-family: "FontAwesome"; content: ""; width: 14px; height: 14px; padding: 3px; line-height: 14px; margin: 0px; position: absolute; left: -20px; top: 5px; color: darkolivegreen; font-size: 13px; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
 
 .Footer { background: #222222; color: white; }
 .Footer-column { width: 33.33%; }
 
-.FooterContainer { width: 960px; margin: 10px auto; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
+.FooterContainer { width: 960px; margin: 0 auto; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
 .FooterContainer-right { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: end; -moz-box-align: end; box-align: end; -webkit-align-items: flex-end; -moz-align-items: flex-end; -ms-align-items: flex-end; -o-align-items: flex-end; align-items: flex-end; -ms-flex-align: end; }
 
 .Copyright { -webkit-align-self: flex-end; -moz-align-self: flex-end; align-self: flex-end; -ms-flex-item-align: end; text-align: right; width: 100%; }
