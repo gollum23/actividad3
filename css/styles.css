@@ -10,8 +10,13 @@
 h1, h2, h3, h4 { font-family: "Alegreya", serif; }
 
 .Header { padding: 1px 0 0 0; margin: 0 auto; width: 960px; }
+.Header-top { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; margin: 0.5em 0; }
 
-.Title { text-align: center; }
+.Logo { height: 70px; }
+.Logo img { height: 100%; }
+
+.Title { text-align: center; -webkit-flex-grow: 1; -moz-flex-grow: 1; flex-grow: 1; -ms-flex-positive: 1; }
+.Title h1 { margin: 0; line-height: 70px; }
 
 .Navigation { background: royalblue; }
 .Navigation-list { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -moz-box-pack: justify; box-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; -ms-flex-pack: justify; list-style: none; margin: 0; padding: 0; }
